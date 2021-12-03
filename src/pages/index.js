@@ -2,8 +2,10 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import parse from "html-react-parser"
 
-import Bio from "../components/bio"
+// import Bio from "../components/bio" -- not needed?
 import Layout from "../components/layout"
+import HomeHero from "../components/home-hero"
+import Ministries from "../components/ministries"
 import Seo from "../components/seo"
 
 const IndexPage = () => {
@@ -11,9 +13,12 @@ const IndexPage = () => {
   return (
     <Layout isHomePage>
       <Seo title="Albuquerque Church" />
-        {/* Header */}
-        {/* Hero */}
-        {/* Body */}
+      <HomeHero />
+      <Ministries />
+        {/* About */}
+        {/* Scripture */}
+        {/* Covid */}
+        {/* Footer??? */}
       
     </Layout>
   )
