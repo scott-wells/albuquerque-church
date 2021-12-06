@@ -11,6 +11,7 @@
 
     --fontSize-root: 16px;
     --lineHeight-normal: 1.5;
+    --lineHeight-relaxed: 1.625;
 
     --fontSize-1: 1rem;
 
@@ -47,6 +48,13 @@ html {
       Fonts
 ------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* @import "./typography.css"; logo font */
+@font-face {
+  font-family: 'AphasiaBTRoman';
+  src: url(../fonts/AphasiaBTRoman.woff2) format('woff2');
+}
+
+
 body { 
     font-family: "Bitter", Arial, Helvetica, serif; 
     line-height: var(--lineHeight-normal);
@@ -62,6 +70,7 @@ h3,
 h4,
 h5,
 h6 {
+  line-height: var(--lineHeight-relaxed);
   letter-spacing: -0.025em;
 }
 
@@ -74,15 +83,15 @@ h2, h3, h4, h5, h6 {
     font-weight: var(--fontWeight-medium); 
 }
 
-h1 { font-size: 2.25rem; }
+h1 { font-size: 1.5rem; }
 
-h2 { font-size: 2rem; }
+h2 { font-size: 1.25rem; }
 
-h3 { font-size: 1.5rem; }
+h3 { font-size: 1.125rem; }
 
-h4 { font-size: 1.25rem; }
+h4 { font-size: 1.05rem; }
 
-h5 { font-size: 1.125rem; }
+h5 { font-size: 1.025rem; }
 
 h6 { font-size: var(--fontSize-1); }
 
@@ -100,68 +109,7 @@ p {
   line-height: var(--lineHeight-relaxed);
 }
 
-ul,
-ol {
-  margin-left: var(--spacing-0);
-  margin-right: var(--spacing-0);
-  padding: var(--spacing-0);
-  margin-bottom: var(--spacing-8);
-  list-style-position: outside;
-  list-style-image: none;
-}
-
-ul li,
-ol li {
-  padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-8) / 2);
-}
-
-li > p {
-  margin-bottom: calc(var(--spacing-8) / 2);
-}
-
-li *:last-child {
-  margin-bottom: var(--spacing-0);
-}
-
-li > ul {
-  margin-left: var(--spacing-8);
-  margin-top: calc(var(--spacing-8) / 2);
-}
-
-blockquote {
-  color: var(--color-text-light);
-  margin-left: calc(-1 * var(--spacing-6));
-  margin-right: var(--spacing-8);
-  padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
-  font-style: italic;
-  margin-bottom: var(--spacing-8);
-}
-
-blockquote > :last-child {
-  margin-bottom: var(--spacing-0);
-}
-
-blockquote > ul,
-blockquote > ol {
-  list-style-position: inside;
-}
-
-table {
-  width: 100%;
-  margin-bottom: var(--spacing-8);
-  border-collapse: collapse;
-  border-spacing: 0.25rem;
-}
-
-table thead tr th {
-  border-bottom: 1px solid var(--color-accent);
-}
-
-/* Link */
-
+/* Links */
 a {
   color: var(--color-primary);
   word-break: break-word;
@@ -172,6 +120,22 @@ a:focus {
   text-decoration: none;
 }
 
+
+/* ----------------------
+    Home - Hero Section
+------------------------- */
+header { background-color: var(--color-offwhite); }
+.navbar div > a { text-decoration: none; }
+.navbar-logo { 
+  font-family: "AphasiaBTRoman", serif;
+  margin-bottom: 0; 
+}
+.navbar-light .navbar-toggler {
+  border: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+
 /* ----------------------
     Home - Hero Section
 ------------------------- */
@@ -180,7 +144,47 @@ a:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 30vh 0;
-
     color: white;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+/* --------------------------
+    Home - Ministry Section
+----------------------------- */
+main { background-color: var(--color-offwhite); }
+.home-ministry-thumb {
+  height: 12rem;
+}
+.home-ministry-thumb a {
+  text-decoration: none;
+}
+.home-ministry-thumb a h1 {
+  color: white;
+  line-height: var(--lineHeight-normal);
+}
+.home-ministry-1 {
+  background: url("../images/bible-leather-cross_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home-ministry-2 {
+  background: url("../images/girl-color-hand_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home-ministry-3 {
+  background: url("../images/coffee-lattes_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home-ministry-4 {
+  background: url("../images/mountain-bikers_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
