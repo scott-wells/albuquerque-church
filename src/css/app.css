@@ -2,14 +2,14 @@
      Variables
 ------------------ */
 :root {
-    --color-blue: #275465;
-    --color-yellow: #EEBB0F;
-    --color-red: #C73A28;
+    --color-blue: #2c4652;
+    --color-yellow: #ddaf4c;
+    --color-red: #c54a2b;
     --color-offwhite: #F2F2F2;
     --color-text: #494949;
     --color-heading: #0F0F0F;
 
-    --fontSize-root: 16px;
+    --fontSize-root: 14px;
     --lineHeight-normal: 1.5;
     --lineHeight-relaxed: 1.625;
 
@@ -74,11 +74,11 @@ h6 {
   letter-spacing: -0.025em;
 }
 
-h1, h3 {
+h1, h2 {
   font-weight: var(--fontWeight-bold);
 }
 
-h2, h3, h4, h5, h6 { 
+h3, h4, h5, h6 { 
     color: var(--color-text); 
     font-weight: var(--fontWeight-medium); 
 }
@@ -154,6 +154,11 @@ header { background-color: var(--color-offwhite); }
     Home - Ministry Section
 ----------------------------- */
 main { background-color: var(--color-offwhite); }
+
+.home-ministry {     
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .home-ministry-thumb {
   height: 12rem;
 }
@@ -187,4 +192,41 @@ main { background-color: var(--color-offwhite); }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+/* ------------------------
+    Home - About Section
+--------------------------- */
+.home-about {
+    background: url("../images/bible-folded-hands_03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.home-about-bar {
+  height:10px;
+  background-color: var(--color-yellow);
+}
+.home-about h3,
+.home-about p { color: var(--color-offwhite); }
+
+
+/* ---------------------------
+    Home - Scripture Section
+------------------------------ */
+.home-scripture {
+  background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.home-scripture div p {
+  display: inline;
+  color: var(--color-yellow);
+}
+.home-scripture div h2 { 
+  display: inline;
 }

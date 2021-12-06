@@ -4,7 +4,7 @@ import parse from "html-react-parser"
 
 
 
-const HomeHero = ({ children }) => {
+const Hero = ({ children }) => {
   
     return (
       <div class="home-hero px-2" >
@@ -29,4 +29,4 @@ const HomeHero = ({ children }) => {
     )
   }
   
-  export default HomeHero
+  export default Hero
