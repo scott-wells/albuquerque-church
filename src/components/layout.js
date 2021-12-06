@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import parse from "html-react-parser"
+// images
+import logoSmall from "../images/logo_sm_01.jpg"
 
 const Layout = ({ isHomePage, children }) => {
   const {
@@ -60,6 +62,20 @@ const Layout = ({ isHomePage, children }) => {
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li> */}
+
+
+                {/* another navbar possiblity */}
+                {/* <div class="container">
+                  <header class="d-flex justify-content-center py-3">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    </ul>
+                  </header>
+                </div> */}
               </ul>
             </div>
           </div>
@@ -68,17 +84,20 @@ const Layout = ({ isHomePage, children }) => {
 
       <main>{children}</main>
 
-      <footer>
-      FOOTER<br/>
-        <nav>
-            <span>About</span>
-            <span>What We Believe</span>
-            <span>Teaching</span>
-            <span>Community</span>
-            <span>Give</span>
-        </nav>
-        <img src="#" alt="#"/>
-        © {new Date().getFullYear()}
+      <footer class="row row-cols-1 row-cols-sm-3 g-4 px-3 text-center">
+        
+        <Link to="/">
+          <img class="footer-logo" src={logoSmall} alt="albuquerque church logo" title="Albuquerque Church" />
+        </Link>
+        <p>&copy; {new Date().getFullYear()}</p>
+        
+        <ul class="nav">
+          <li class="nav-item"><Link to="/about" class="nav-link">About</Link></li>
+          <li class="nav-item"><Link to="/what-we-believe" class="nav-link">What We Believe</Link></li>
+          <li class="nav-item"><Link to="/teaching" class="nav-link">Teaching</Link></li>
+          <li class="nav-item"><Link to="/community" class="nav-link">Community</Link></li>
+          <li class="nav-item"><Link to="/give" class="nav-link">Give</Link></li>
+        </ul>
       </footer>
     </div>
   )
