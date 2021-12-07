@@ -12,7 +12,12 @@ const Teaching = () => {
             const teachings = res.data.filter(posts => {
                return posts.slug.includes('teaching');
             })
-            console.log(teachings);
+
+            teachings.forEach(teaching => {
+                let audioLink = teaching.excerpt.rendered.replace(/<\/?p[^>]*>/g, "").replace(/(\r\n|\n|\r)/gm, "");
+                teaching.content.rendered = audioLink;
+            })
+
             setTeachings(teachings);
         })
     },[])
@@ -23,9 +28,12 @@ const Teaching = () => {
             {teachings &&
                 teachings.map(teaching => {
                     return(
-                        <div key={teaching.id}>
+                        <div key={teaching.id} className="mt-3">
                             <h1>{teaching.title.rendered}</h1>
-                            <div dangerouslySetInnerHTML={{__html: teaching.content.rendered}} />
+                            <audio controls className='w-100 border'>
+                                <source src={teaching.content.rendered} type="audio/mpeg" />
+                            </audio>
+                            {/* <div dangerouslySetInnerHTML={{__html: teaching.content.rendered}} /> */}
                         </div>
                         )
                 })
