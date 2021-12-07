@@ -8,6 +8,7 @@ const Teaching = () => {
     useEffect(() => {
         axios.get(`https://albuquerque-church.herokuapp.com/wp-json/wp/v2/posts`)
         .then(res => {
+            console.log(res.data);
             const teachings = res.data.filter(posts => {
                return posts.slug.includes('teaching');
             })
