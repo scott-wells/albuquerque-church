@@ -22,7 +22,7 @@ const IndexPage = () => {
       <Scripture />
       <Covid />
         {/* Footer??? */}
-      
+
     </Layout>
   )
 }

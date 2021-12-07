@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "babel-plugin-styled-components": "^2.0.2",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.2",
