@@ -31,7 +31,8 @@ const Teaching = () => {
                         <div key={teaching.id} className="mt-3">
                             <h1>{teaching.title.rendered}</h1>
                             <audio controls className='w-100 border'>
-                                <source src={teaching.content.rendered} type="audio/mpeg" />
+                                <source src={teaching.centent.rendered} type="audio/ogg"></source>
+                                {/* <source src={teaching.content.rendered} type="audio/mpeg" /> */}
                             </audio>
                             {/* <div dangerouslySetInnerHTML={{__html: teaching.content.rendered}} /> */}
                         </div>

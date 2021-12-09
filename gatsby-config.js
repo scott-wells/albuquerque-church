@@ -45,6 +45,14 @@ module.exports = {
         path: `${__dirname}/content/assets`,
       },
     },
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "v7e3fucw",
+        dataset: "production",
+        token: process.env.SANITY_TOKEN,
+      },
+    },
 
     /**
      * The following two plugins are required if you want to use Gatsby image
@@ -77,5 +85,6 @@ module.exports = {
      */
     // `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`
   ],
 }
