@@ -128,13 +128,17 @@ a:focus {
 ------------------------- */
 header { background-color: var(--color-offwhite); }
 .navbar div > a { text-decoration: none; }
-.navbar-logo { 
+.navbar-logo-font { 
   font-family: "AphasiaBTRoman", serif;
   margin-bottom: 0; 
 }
 .navbar-light .navbar-toggler {
   border: none;
   color: rgba(0, 0, 0, 1);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  /* border: 2px solid rgba(0,0,0, .25); */
 }
 
 
@@ -147,8 +151,8 @@ header { background-color: var(--color-offwhite); }
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 
@@ -222,8 +226,8 @@ main { background-color: var(--color-offwhite); }
 ------------------------------ */
 .home-scripture {
   background-color: var(--color-offwhite);
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 .home-scripture col { position: relative; }
 .home-scripture blockquote { 
@@ -234,20 +238,6 @@ main { background-color: var(--color-offwhite); }
 .home-scripture blockquote small { 
   font-size: var(--fontSize-1);
   font-weight: var(--fontWeight-medium); 
-}
-blockquote::before {
-  content: open-quote;
-  /* Place it at the top-left */
-  top: 10px;
-  left: -20px;
-}
-blockquote::before {
-  color: var(--color-yellow);
-  display: block;
-  line-height: 0;
-  font-size: 4em;
-  font-weight: var(--fontWeight-medium); 
-  position: relative;
 }
 
 
@@ -272,8 +262,13 @@ blockquote::before {
 footer {
   background-color: var(--color-blue);
   color: var(--color-offwhite);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+}
+footer .nav-item a {
+  color: var(--color-offwhite);
+  text-decoration: none;
 }
 .footer-logo {
   height: auto;
