@@ -63,7 +63,7 @@ const Layout = ({ isHomePage, children }) => {
         <nav className="navbar navbar-expand-md navbar-light d-none d-sm-block p-4">
 
           <div className="d-flex justify-content-between">
-            <div className="col-6 col-md-4">
+            <div className="col-6 col-md-5">
               <Link to="/" className="navbar-logo-font">
                 <img class="img-fluid d-block d-md-none" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
                 <h1 className="d-none d-md-block">Albuquerque Church</h1>

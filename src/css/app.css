@@ -14,7 +14,7 @@
     --lineHeight-normal: 1.5;
     --lineHeight-relaxed: 1.625;
 
-    --fontSize-1: 1rem;
+    --fontSize-1: 1.125rem;
     --fontWeight-extrabold: 800;
     --fontWeight-bold: 700;
     --fontWeight-medium: 500;
@@ -96,6 +96,26 @@ h4 { font-size: 1.05rem; }
 h5 { font-size: 1.025rem; }
 
 h6 { font-size: var(--fontSize-1); }
+
+/* media queries */
+@media (min-width: 576px) {
+  h1 { font-size: 2rem; }
+
+  h2 { font-size: 1.25rem; }
+
+  h3 { font-size: 1.125rem; }
+
+  h4 { font-size: 1.05rem; }
+
+  h5 { font-size: 1.025rem; }
+
+  h6 { font-size: var(--fontSize-1); }
+
+  p { 
+    font-size: var(--fontSize-1);
+    line-height: var(--lineHeight-normal); 
+  }
+}
 
 h1 > a,
 h2 > a,
@@ -198,6 +218,20 @@ main { background-color: var(--color-offwhite); }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: 576px) {
+  .home-ministry {     
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    max-width: 95%;
+  }
+}
+@media (min-width: 992px) {
+  .home-ministry {
+    max-width: 80%;
+  }
+  .home-ministry-thumb { height: 16rem; }
 }
 
 

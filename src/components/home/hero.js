@@ -7,12 +7,12 @@ import parse from "html-react-parser"
 const Hero = ({ children }) => {
   
     return (
-      <div class="home-hero px-2" >
+      <div class="home-hero px-3 px-sm-5" >
         {/* including img tag for credit only */}
         <img class="visually-hidden" title="Photo by Bill Tondreau" src="#" />
-        <div class="container-fluid">
+        <div class="container-fluid ms-4">
           <h1 className="mb-3">
-            A vision for the community.<br/>
+            A vision for our community.<br/>
             A home for your family.
           </h1>
           <br/>
