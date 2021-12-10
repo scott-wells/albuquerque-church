@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useStaticQuery, graphql } from "gatsby"
+import React, { useEffect } from 'react'
+import { graphql } from "gatsby"
 import Layout from '../components/layout';
 
-const Teaching = ({ data }) => {
-    const [teachings, setTeachings] = useState(null);
-
-    console.log(data)
+const Teaching = ( {data} ) => {
+    console.log(data);
 
     useEffect(() => {
         console.log('mounted');
@@ -21,9 +19,9 @@ const Teaching = ({ data }) => {
 export default Teaching;
 
 export const query = graphql`
-query data {
+query allTeachings {
     teachings: allSanityTeachings {
-      nodes{
+      nodes {
         title
         description
         audio

@@ -1,6 +1,6 @@
 export default {
     name: 'Teachings',
-    title: 'Teaching',
+    title: 'Teachings',
     type: 'document',
     fields: [
       {
