@@ -10,7 +10,7 @@ const Covid = ({ children }) => {
         <>
         <div class="home-covid-bar container-fluid"></div>
         <div class="home-covid container-fluid">
-            <div class="row row-cols-1 row-cols-sm-3 g-4 px-4">
+            <div class="home-covid-text row row-cols-1 g-4 px-4 mx-auto">
                 <h2 class="text-center">COVID-19 Practices Update</h2>
                 <div class="col text-center">
                     <p>Albuquerque Church is committed to cleaning our facility, on a routine basis before Sunday services for your care and safety. For your convenience disinfecting gel stations are placed throughout the church.</p>

@@ -301,6 +301,16 @@ main { background-color: var(--color-offwhite); }
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+@media (min-width: 576px) {
+  .home-covid {     
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .home-covid-text { max-width: 90%; }
+}
+@media (min-width: 992px) {
+  .home-covid-text { max-width: 70%; }
+}
 
 
 /* ---------
