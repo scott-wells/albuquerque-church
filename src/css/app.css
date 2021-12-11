@@ -327,6 +327,12 @@ footer .nav-item a {
   color: var(--color-offwhite);
   text-decoration: none;
 }
-/* @media (min-width: 576px) {
-  footer > div { max-width: 100%; }
-} */
+
+
+/* ------------
+    404 Error
+--------------- */
+.page-404 {
+  background-color: var(--color-offwhite);
+  
+}

@@ -4,20 +4,20 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const NotFoundPage = ({ data, location }) => {
+const ComingSoon = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="404: Not Found" />
-      <div className="page-404 container-fluid">
+      <div className="coming-soon container-fluid">
         <div className="col-8 mx-auto">
           <br/>
           <br/>
           <br/>
           <br/>
-          <h1>404: Not Found</h1>
-          <p>It seems you are looking for a page that doesn't exist.</p>
+          <h1>Coming Soon...</h1>
+          <p>This page isn't quite finished. Check back here soon!</p>
           <Link to="/" class="btn btn-light btn-outline btn-sm" role="button">
             Go back &nbsp;
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -35,7 +35,7 @@ const NotFoundPage = ({ data, location }) => {
   )
 }
 
-export default NotFoundPage
+export default ComingSoon
 
 export const pageQuery = graphql`
   query {

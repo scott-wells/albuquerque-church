@@ -28,16 +28,16 @@ const Layout = ({ isHomePage, children }) => {
                     <Link to="/about" className="nav-link active" aria-current="page">About</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/what-we-believe" className="nav-link">What We Believe</Link>
+                    <Link to="/coming-soon" className="nav-link">What We Believe</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/teaching" className="nav-link">Teaching</Link>
+                    <Link to="/coming-soon" className="nav-link">Teaching</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/community" className="nav-link">Community</Link>
+                    <Link to="/coming-soon" className="nav-link">Community</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/give" className="nav-link">Give</Link>
+                    <Link to="/coming-soon" className="nav-link">Give</Link>
                   </li>
                 </ul>
               </div>
@@ -65,16 +65,16 @@ const Layout = ({ isHomePage, children }) => {
                   <Link to="/about" className="nav-link active" aria-current="page">About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/what-we-believe" className="nav-link">What We Believe</Link>
+                  <Link to="/coming-soon" className="nav-link">What We Believe</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/teaching" className="nav-link">Teaching</Link>
+                  <Link to="/coming-soon" className="nav-link">Teaching</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/community" className="nav-link">Community</Link>
+                  <Link to="/coming-soon" className="nav-link">Community</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/give" className="nav-link">Give</Link>
+                  <Link to="/coming-soon" className="nav-link">Give</Link>
                 </li>
               </ul>
             </div>
@@ -125,7 +125,7 @@ const Layout = ({ isHomePage, children }) => {
             </div>
             <div className="col d-flex flex-column justify-content-center text-end">
               <p>(505) 990-7000</p>
-              <p>elders@albuquerque.church</p>
+              <a href="mailto:elders@albuquerque.church"><p>elders@albuquerque.church</p></a>
             </div>
           </div>
         </div>
