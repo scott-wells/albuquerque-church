@@ -1,5 +1,5 @@
 /* Table of Contents */
-/* 
+/*
 - Variables
 
 - Animations
@@ -94,8 +94,8 @@ html {
 }
 
 
-body { 
-    font-family: "Bitter", Arial, Helvetica, serif; 
+body {
+    font-family: "Bitter", Arial, Helvetica, serif;
     line-height: var(--lineHeight-normal);
     font-size: var(--fontSize-root);
     color: var(--color-heading);
@@ -117,9 +117,9 @@ h1, h2 {
   font-weight: var(--fontWeight-extrabold);
 }
 
-h3, h4, h5, h6 { 
-    color: var(--color-text); 
-    font-weight: var(--fontWeight-bold); 
+h3, h4, h5, h6 {
+    color: var(--color-text);
+    font-weight: var(--fontWeight-bold);
 }
 
 h1 { font-size: 1.5rem; }
@@ -148,9 +148,9 @@ h6 { font-size: var(--fontSize-1); }
 
   h6 { font-size: var(--fontSize-1); }
 
-  p { 
+  p {
     font-size: var(--fontSize-1);
-    line-height: var(--lineHeight-normal); 
+    line-height: var(--lineHeight-normal);
   }
 }
 
@@ -198,9 +198,9 @@ ul li span {
 ---------------------- */
 header { background-color: var(--color-offwhite); }
 .navbar div > a { text-decoration: none; }
-.navbar-logo-font { 
+.navbar-logo-font {
   font-family: "AphasiaBTRoman", serif;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 .navbar-light .navbar-toggler {
   border: none;
@@ -241,7 +241,7 @@ header { background-color: var(--color-offwhite); }
 ----------------------------- */
 main { background-color: var(--color-offwhite); }
 
-.home-ministry {     
+.home-ministry {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -281,7 +281,7 @@ main { background-color: var(--color-offwhite); }
 }
 
 @media (min-width: 576px) {
-  .home-ministry {     
+  .home-ministry {
     padding-top: 6rem;
     padding-bottom: 6rem;
     max-width: 95%;
@@ -324,18 +324,18 @@ main { background-color: var(--color-offwhite); }
   padding-bottom: 4rem;
 }
 .home-scripture col { position: relative; }
-.home-scripture blockquote { 
+.home-scripture blockquote {
   font-size: 1.3rem;
   font-weight: bolder;
   line-height: 1.5;
 }
-.home-scripture blockquote small { 
+.home-scripture blockquote small {
   font-size: var(--fontSize-1);
-  font-weight: var(--fontWeight-medium); 
+  font-weight: var(--fontWeight-medium);
 }
 
 @media (min-width: 576px) {
-  .home-scripture {     
+  .home-scripture {
     padding-top: 6rem;
     padding-bottom: 6rem;
     max-width: 90%;
@@ -362,7 +362,7 @@ main { background-color: var(--color-offwhite); }
   padding-bottom: 4rem;
 }
 @media (min-width: 576px) {
-  .home-covid {     
+  .home-covid {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
@@ -394,7 +394,7 @@ footer .nav-item a {
 --------------- */
 .page-404 {
   background-color: var(--color-offwhite);
-  
+
 }
 
 
@@ -412,6 +412,23 @@ footer .nav-item a {
   min-height: 400px;
 }
 
+.what-we-believe-hero {
+  background: url("../images/what-we-believe.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 400px;
+}
+
+.what-we-believe-container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 /* ------------------------
     About - WhoWeAre Section
@@ -444,7 +461,7 @@ footer .nav-item a {
 }
 .about-our-history h3 { color: var(--color-offwhite); }
 @media (min-width: 576px) {
-  .about-our-history{     
+  .about-our-history{
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
