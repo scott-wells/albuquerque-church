@@ -274,6 +274,19 @@ main { background-color: var(--color-offwhite); }
   font-weight: var(--fontWeight-medium); 
 }
 
+@media (min-width: 576px) {
+  .home-scripture {     
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    max-width: 90%;
+  }
+  .home-scripture blockquote { font-size: 1.5rem; }
+}
+@media (min-width: 992px) {
+  .home-scripture { max-width: 70%; }
+  .home-scripture blockquote { font-size: 2rem; }
+}
+
 
 /* -----------------------
     Home - COVID Section
