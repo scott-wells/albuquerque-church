@@ -327,7 +327,6 @@ footer .nav-item a {
   color: var(--color-offwhite);
   text-decoration: none;
 }
-.footer-logo {
-  height: auto;
-  width: 100%;
-}
+/* @media (min-width: 576px) {
+  footer > div { max-width: 100%; }
+} */

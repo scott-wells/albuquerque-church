@@ -4,20 +4,6 @@ import parse from "html-react-parser"
 import logo from "../images/logo_02.jpeg"
 
 const Layout = ({ isHomePage, children }) => {
-  // const {
-  //   wp: {
-  //     generalSettings: { title },
-  //   },
-  // } = useStaticQuery(graphql`
-  //   query LayoutQuery {
-  //     wp {
-  //       generalSettings {
-  //         title
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
 
   return (
     <div className="global-wrapper" data-is-root-path={isHomePage}>
@@ -98,21 +84,52 @@ const Layout = ({ isHomePage, children }) => {
 
       <main>{children}</main>
 
-        <footer class=" container-fluid py-5">
-          <ul class="nav justify-content-center border-bottom pb-4 mb-4">
-            {/* <li class="nav-item"><Link to="/" class="nav-link px-2">Home</Link></li> */}
-            <li class="nav-item"><Link to="/about" class="nav-link px-2">About</Link></li>
-            <li class="nav-item"><Link to="/what-we-believe" class="nav-link px-2">What We Believe</Link></li>
-            <li class="nav-item"><Link to="/teaching" class="nav-link px-2">Teaching</Link></li>
-            <li class="nav-item"><Link to="/community" class="nav-link px-2">Community</Link></li>
-            <li class="nav-item"><Link to="/give" class="nav-link px-2">Give</Link></li>
+      {/* footer mobile */}
+      <footer className=" container-fluid text-center py-4 px-3 d-block d-md-none">
+        <div className="col-10 mx-auto">
+          <ul className="nav justify-content-center border-bottom pb-4 mb-4">
+            <li class="nav-item"><Link to="/" className="nav-link px-2">Home</Link></li>
+            <li className="nav-item"><Link to="/about" className="nav-link px-2">About</Link></li>
+            <li className="nav-item"><Link to="/what-we-believe" className="nav-link px-2">What We Believe</Link></li>
+            <li className="nav-item"><Link to="/teaching" className="nav-link px-2">Teaching</Link></li>
+            <li className="nav-item"><Link to="/community" className="nav-link px-2">Community</Link></li>
+            <li className="nav-item"><Link to="/give" className="nav-link px-2">Give</Link></li>
           </ul>
-          <p class="text-center">
-            <Link to="/">
-              <img class="img-fluid py-3" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
-            </Link>
-            &copy; {new Date().getFullYear()}</p>
-        </footer>
+          <Link to="/">
+            <img className="img-fluid py-3 p-md-0" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
+          </Link>
+          <p>&copy; {new Date().getFullYear()}</p>
+          <p>(505) 990-7000</p>
+          <p>elders@albuquerque.church</p>
+        </div>
+      </footer>
+
+      {/* footer desktop */}
+      <footer className=" container-fluid py-5 d-none d-md-block">
+        <div className="col-10 mx-auto">
+          <ul className="nav justify-content-center border-bottom pb-4 mb-4">
+            <li class="nav-item"><Link to="/" className="nav-link px-2">Home</Link></li>
+            <li className="nav-item"><Link to="/about" className="nav-link px-2">About</Link></li>
+            <li className="nav-item"><Link to="/what-we-believe" className="nav-link px-2">What We Believe</Link></li>
+            <li className="nav-item"><Link to="/teaching" className="nav-link px-2">Teaching</Link></li>
+            <li className="nav-item"><Link to="/community" className="nav-link px-2">Community</Link></li>
+            <li className="nav-item"><Link to="/give" className="nav-link px-2">Give</Link></li>
+          </ul>
+          <div className="d-flex">
+            <div className="col-6">
+              <Link to="/">
+                <img className="img-fluid py-3 p-md-0" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
+              </Link>
+
+              <p>&copy; {new Date().getFullYear()}</p>
+            </div>
+            <div className="col d-flex flex-column justify-content-center text-end">
+              <p>(505) 990-7000</p>
+              <p>elders@albuquerque.church</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     </div>
   )
