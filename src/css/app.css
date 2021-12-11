@@ -1,3 +1,36 @@
+/* Table of Contents */
+/* 
+- Variables
+
+- Animations
+
+- Root
+
+- Fonts
+--- Headings
+--- Links
+--- Lists
+
+- Header
+
+- Home Page
+--- Hero
+--- Ministries
+--- About
+--- Scripture
+--- COVID
+
+- Footer
+
+- 404
+
+- About Page
+--- Hero
+--- WhoWeAre
+--- OurHistory
+*/
+
+
 /* ---------------
      Variables
 ------------------ */
@@ -33,6 +66,10 @@
     }
 }
 
+
+/* ---------------
+     Root Styles
+------------------ */
 *,
 :after,
 :before {
@@ -142,10 +179,23 @@ a:focus {
   text-decoration: none;
 }
 
+/* Lists */
+ul { padding-left: 0; }
+ul li {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+ul li span {
+  font-size: 2rem;
+  margin-right: 1rem;
+  overflow: visible;
+}
 
-/* ----------------------
-    Home - Hero Section
-------------------------- */
+
+/* -------------------
+     Header Section
+---------------------- */
 header { background-color: var(--color-offwhite); }
 .navbar div > a { text-decoration: none; }
 .navbar-logo-font { 
@@ -173,6 +223,16 @@ header { background-color: var(--color-offwhite); }
     color: white;
     padding-top: 6rem;
     padding-bottom: 6rem;
+    position: relative;
+}
+.home-hero-watermark {
+  background-color: var(--color-offwhite);
+  color: var(--color-text);
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: 0;
+  left: .3rem;
+  opacity: .7;
 }
 
 
@@ -335,4 +395,86 @@ footer .nav-item a {
 .page-404 {
   background-color: var(--color-offwhite);
   
+}
+
+
+/* ----------------------
+    About - Hero Section
+------------------------- */
+.about-hero {
+  background: url("../images/bible-leather-cross_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 400px;
+}
+
+
+/* ------------------------
+    About - WhoWeAre Section
+--------------------------- */
+.about-whoweare {
+  background: url("../images/bible-folded-hands_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--color-text);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.about-whoweare-bar {
+  height:10px;
+  background-color: var(--color-yellow);
+}
+.about-whoweare h3,
+.about-whoweare p { color: var(--color-text); }
+
+
+/* -----------------------------
+    About - OurHistory Section
+-------------------------------- */
+.about-our-history {
+  background-color: var(--color-blue);
+  color: var(--color-offwhite);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.about-our-history h3 { color: var(--color-offwhite); }
+@media (min-width: 576px) {
+  .about-our-history{     
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .about-our-history-text { max-width: 90%; }
+}
+@media (min-width: 992px) {
+  .about-our-history-text { max-width: 60%; }
+}
+
+
+/* ------------------------
+    About - Staff Section
+--------------------------- */
+.about-staff {
+  background-color: var(--color-offwhite);
+  color: var(--color-text);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.about-staff-bar {
+  height:10px;
+  background-color: var(--color-brown);
+}
+.about-staff-image {
+  width: 150px;
+  height: 150px;
+  overflow-y: hidden;
+}
+.about-staff-image picture {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
 }

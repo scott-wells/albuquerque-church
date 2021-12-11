@@ -23,7 +23,7 @@ const Hero = ({ children }) => {
 </svg>
           </Link>
             
-          {/* <button class="btn btn-primary btn-lg" type="button">Example button</button> */}
+          <span className="home-hero-watermark">Bill Tondreau, Sumner & Dene Gallery</span>
         </div>
       </div>
     )
