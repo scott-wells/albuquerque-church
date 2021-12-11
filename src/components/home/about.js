@@ -10,8 +10,9 @@ const About = ({ children }) => {
         <>
         <div class="home-about-bar container-fluid"></div>
         <div class="home-about container-fluid">
-            <div class="row row-cols-1 row-cols-sm-3 g-4 px-4">
-                        <h2 class="text-center">About Albuquerque Church</h2>
+        <h2 class="text-center mb-4 mb-md-5">About Albuquerque Church</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 px-4">
+                        
                         <div class="col text-center">
                             <h3>Who We Are</h3>
                             <p>We are a local group of Christ Followers. We long to see the Kingdom of God enlarged and to
