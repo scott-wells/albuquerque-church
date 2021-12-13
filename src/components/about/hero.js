@@ -7,8 +7,8 @@ import parse from "html-react-parser"
 const Hero = ({ children }) => {
   
     return (
-      <div class="about-hero px-1 px-sm-5" >
-        <div class="container-fluid ms-4">
+      <div class="about-hero d-flex px-1 px-sm-5" >
+        <div class="container-fluid align-self-center ms-4">
           <h1>
             This is Who We Are
           </h1>
