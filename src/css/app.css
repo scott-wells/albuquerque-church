@@ -416,23 +416,17 @@ footer .nav-item a {
   min-height: 400px;
 }
 
-.what-we-believe-hero {
-  background: url("../images/what-we-believe.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  min-height: 400px;
-}
 
-.what-we-believe-container{
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+/* ---------------------------
+    About - Job Post Section
+------------------------------ */
+.about-job-post {
+  color: var(--color-text);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+.about-job-post .card { padding: 0; }
+
 
 /* ------------------------
     About - WhoWeAre Section
@@ -448,7 +442,7 @@ footer .nav-item a {
 }
 .about-whoweare-bar {
   height:10px;
-  background-color: var(--color-yellow);
+  background-color: var(--color-brown);
 }
 .about-whoweare h3,
 .about-whoweare p { color: var(--color-text); }
@@ -462,6 +456,10 @@ footer .nav-item a {
   color: var(--color-offwhite);
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+.about-our-history-bar {
+  height:10px;
+  background-color: var(--color-yellow);
 }
 .about-our-history h3 { color: var(--color-offwhite); }
 @media (min-width: 576px) {
@@ -487,7 +485,7 @@ footer .nav-item a {
 }
 .about-staff-bar {
   height:10px;
-  background-color: var(--color-brown);
+  background-color: var(--color-yellow);
 }
 .about-staff-image {
   width: 150px;
@@ -500,11 +498,8 @@ footer .nav-item a {
   object-fit: contain;
 }
 
-/* ----------------------
-    Teaching - Hero Section
-------------------------- */
-.teaching-hero {
-  background: url("../images/teaching.jpeg");
+.what-we-believe-hero {
+  background: url("../images/what-we-believe.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -512,6 +507,21 @@ footer .nav-item a {
   padding-top: 6rem;
   padding-bottom: 6rem;
   min-height: 400px;
+}
+
+.what-we-believe-container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ----------------------
+    Teaching - Hero Section
+------------------------- */
+.teaching-hero {
+  background: url("../images/teaching.jpeg");
+
 }
 
 .teaching-container{
