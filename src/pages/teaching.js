@@ -24,7 +24,7 @@ const Teaching = ( {data} ) => {
               teachings.map((teaching,index) => {
                 return(
                   <div key={index} className='teaching-block'>
-                    <h3>{teaching.title}</h3>
+                    <p>{teaching.title}</p>
                     <audio controls className='teaching-audio' src={teaching.audio}></audio>
                   </div>
                 )

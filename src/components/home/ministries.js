@@ -19,7 +19,7 @@ const Ministries = ({ children }) => {
           <div class="col">
             <div class="card home-ministry-thumb home-ministry-2">
               {/* <Link to="/teaching/abq-kids-church" class="my-auto ps-3 ps-md-5"> */}
-              <Link to="/coming-soon" class="my-auto ps-3 ps-md-5">
+              <Link to="/abq-kids" class="my-auto ps-3 ps-md-5">
                 <h1>ABQ Kids <br/>Church</h1>
               </Link>
             </div>

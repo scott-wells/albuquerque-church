@@ -32,6 +32,10 @@
 
 - Teaching Page
 --- Hero
+
+
+- ABQ Kids Page
+---Hero
 */
 
 
@@ -543,4 +547,26 @@ footer .nav-item a {
   border: 1px solid black;
   width: 100%;
   margin: 0 auto !important;
+}
+
+
+/* ----------------------
+    ABQ KIDS - Hero Section
+------------------------- */
+.abq-kids-hero {
+  background: url("../images/girl-color-hand_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 400px;
+}
+
+.abq-kids-container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
