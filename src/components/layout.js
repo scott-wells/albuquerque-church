@@ -55,7 +55,7 @@ const Layout = ({ isHomePage, children }) => {
                 <h1 className="d-none d-md-block">Albuquerque Church</h1>
               </Link>
             </div>
-            
+
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -68,7 +68,7 @@ const Layout = ({ isHomePage, children }) => {
                   <Link to="/coming-soon" className="nav-link">What We Believe</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/coming-soon" className="nav-link">Teaching</Link>
+                  <Link to="/teaching" className="nav-link">Teaching</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/coming-soon" className="nav-link">Community</Link>

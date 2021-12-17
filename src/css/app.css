@@ -28,6 +28,10 @@
 --- Hero
 --- WhoWeAre
 --- OurHistory
+
+
+- Teaching Page
+--- Hero
 */
 
 
@@ -494,4 +498,35 @@ footer .nav-item a {
   width: auto;
   height: 100%;
   object-fit: contain;
+}
+
+/* ----------------------
+    Teaching - Hero Section
+------------------------- */
+.teaching-hero {
+  background: url("../images/teaching.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 400px;
+}
+
+.teaching-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.teaching-block{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.teaching-audio{
+  border: 1px solid black;
+  width: 100%;
+  margin: 0 auto !important;
 }

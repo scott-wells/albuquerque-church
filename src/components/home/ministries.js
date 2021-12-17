@@ -5,13 +5,13 @@ import parse from "html-react-parser"
 
 
 const Ministries = ({ children }) => {
-  
+
     return (
       <div class="container-fluid">
         <div class="home-ministry row row-cols-1 row-cols-sm-2 g-4 px-2 mx-auto">
           <div class="col">
             <div class="card home-ministry-thumb home-ministry-1">
-                <Link to="/coming-soon" class="my-auto ps-3 ps-md-5">
+                <Link to="/teaching" class="my-auto ps-3 ps-md-5">
                   <h1>Teaching</h1>
                 </Link>
             </div>
@@ -44,5 +44,5 @@ const Ministries = ({ children }) => {
       </div>
     )
   }
-  
+
   export default Ministries
