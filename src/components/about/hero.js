@@ -5,7 +5,7 @@ import parse from "html-react-parser"
 
 
 const Hero = ({ children }) => {
-  
+
     return (
       <div class="about-hero px-1 px-sm-5" >
         <div class="container-fluid ms-4">
@@ -16,5 +16,5 @@ const Hero = ({ children }) => {
       </div>
     )
   }
-  
+
   export default Hero
