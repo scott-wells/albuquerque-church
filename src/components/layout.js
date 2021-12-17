@@ -28,7 +28,7 @@ const Layout = ({ isHomePage, children }) => {
                     <Link to="/about" className="nav-link active" aria-current="page">About</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/coming-soon" className="nav-link">What We Believe</Link>
+                    <Link to="/what-we-believe" className="nav-link">What We Believe</Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/coming-soon" className="nav-link">Teaching</Link>
@@ -65,7 +65,7 @@ const Layout = ({ isHomePage, children }) => {
                   <Link to="/about" className="nav-link active" aria-current="page">About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/coming-soon" className="nav-link">What We Believe</Link>
+                  <Link to="/what-we-believe" className="nav-link">What We Believe</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/teaching" className="nav-link">Teaching</Link>
