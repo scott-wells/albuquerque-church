@@ -498,8 +498,11 @@ footer .nav-item a {
   object-fit: contain;
 }
 
-.what-we-believe-hero {
-  background: url("../images/what-we-believe.jpeg");
+/* ----------------------
+    Teaching - Hero Section
+------------------------- */
+.teaching-hero {
+  background: url("../images/teaching.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -507,21 +510,6 @@ footer .nav-item a {
   padding-top: 6rem;
   padding-bottom: 6rem;
   min-height: 400px;
-}
-
-.what-we-believe-container{
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* ----------------------
-    Teaching - Hero Section
-------------------------- */
-.teaching-hero {
-  background: url("../images/teaching.jpeg");
-
 }
 
 .teaching-container{
