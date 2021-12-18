@@ -14,8 +14,8 @@ const Layout = ({ isHomePage, children }) => {
           <div className="container-fluid">
             <div className="row pt-4">
               <Link to="/" className="navbar-logo-font">
-              <img class="img-fluid" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
-                {/* <h1>Albuquerque Church</h1> */}
+              {/* <img class="img-fluid" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/> */}
+                <h1>Albuquerque Church</h1>
               </Link>
             </div>
             <div className="row mx-auto py-1">
@@ -31,7 +31,7 @@ const Layout = ({ isHomePage, children }) => {
                     <Link to="/what-we-believe" className="nav-link">What We Believe</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/coming-soon" className="nav-link">Teaching</Link>
+                    <Link to="/teaching" className="nav-link">Teaching</Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/coming-soon" className="nav-link">Community</Link>
@@ -51,8 +51,8 @@ const Layout = ({ isHomePage, children }) => {
           <div className="d-flex justify-content-between">
             <div className="col-6 col-md-5">
               <Link to="/" className="navbar-logo-font">
-                <img class="img-fluid d-block d-md-none" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
-                <h1 className="d-none d-md-block">Albuquerque Church</h1>
+                {/* <img class="img-fluid d-block d-md-none" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/> */}
+                <h1>Albuquerque Church</h1>
               </Link>
             </div>
 
