@@ -95,12 +95,17 @@ const Layout = ({ isHomePage, children }) => {
             <li className="nav-item"><Link to="/community" className="nav-link px-2">Community</Link></li>
             <li className="nav-item"><Link to="/give" className="nav-link px-2">Give</Link></li>
           </ul>
+          <br/>
+          <p><strong>Join Us Sundays at 10 AM</strong>
+            <br/>5528 Eubank Blvd. Suite 2,
+            <br/> Albuquerque, NM 87111</p>
+          <p>(505) 990-7000</p>
+          <a href="mailto:elders@albuquerque.church"><p>elders@albuquerque.church</p></a>
+          <br/>
           <Link to="/">
             <img className="img-fluid py-3 p-md-0" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
           </Link>
           <p>&copy; {new Date().getFullYear()}</p>
-          <p>(505) 990-7000</p>
-          <p>elders@albuquerque.church</p>
         </div>
       </footer>
 
@@ -124,7 +129,11 @@ const Layout = ({ isHomePage, children }) => {
               <p>&copy; {new Date().getFullYear()}</p>
             </div>
             <div className="col d-flex flex-column justify-content-center text-end">
-              <p>(505) 990-7000</p>
+            <br/>
+            <p><strong>Join Us Sundays at 10 AM</strong>
+              <br/>5528 Eubank Blvd. Suite 2,
+              <br/> Albuquerque, NM 87111
+              <br/>(505) 990-7000</p>
               <a href="mailto:elders@albuquerque.church"><p>elders@albuquerque.church</p></a>
             </div>
           </div>
