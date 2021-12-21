@@ -50,7 +50,6 @@ query allTeachings {
     ) {
       nodes {
         title
-        description
         audio
         _createdAt
       }

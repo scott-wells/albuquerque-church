@@ -6,9 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
 import blockContent from './blockContent'
-import category from './category'
-import post from './post'
-import author from './author'
+
 import teaching from './teaching'
 import pastor from './pastor'
 
@@ -16,9 +14,6 @@ import pastor from './pastor'
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
-    post,
-    author,
-    category,
     teaching,
     pastor,
     blockContent,
