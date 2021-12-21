@@ -206,6 +206,7 @@ ul li span {
 ---------------------- */
 header { background-color: var(--color-offwhite); }
 .navbar div > a { text-decoration: none; }
+.navbar div a h1 { margin-bottom: 0; }
 .navbar-logo-font {
   font-family: "AphasiaBTRoman", serif;
   margin-bottom: 0;
@@ -419,24 +420,17 @@ footer .nav-item a {
   padding-bottom: 6rem;
   min-height: 400px;
 }
+.about-hero div h1 { font-size: 1.8rem; }
 
-.what-we-believe-hero {
-  background: url("../images/what-we-believe.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  min-height: 400px;
+/* --------------------------
+    About - JobPost Section
+----------------------------- */
+.about-job-post {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
+.about-job-post .card { padding: 0; }
 
-.what-we-believe-container{
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 
 /* ------------------------
     About - WhoWeAre Section
@@ -504,11 +498,12 @@ footer .nav-item a {
   object-fit: contain;
 }
 
-/* ----------------------
-    Teaching - Hero Section
-------------------------- */
+
+/* ---------------------------------
+    What We Believe - Hero Section
+------------------------------------ */
 .what-we-believe-hero {
-  background: url("../images/what-we-believe.jpeg");
+  background: url("../images/bible-ring-shadow_02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -518,11 +513,19 @@ footer .nav-item a {
   min-height: 400px;
 }
 
+.what-we-believe-container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
 /* ----------------------
     Teaching - Hero Section
 ------------------------- */
 .teaching-hero {
-  background: url("../images/teaching.jpeg");
+  background: url("../images/bibles-in-laps_02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -570,3 +573,5 @@ footer .nav-item a {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+

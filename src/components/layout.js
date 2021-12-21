@@ -10,15 +10,12 @@ const Layout = ({ isHomePage, children }) => {
       <header >
 
       {/* nav mobile */}
-        <nav className="navbar navbar-expand-md navbar-light d-block d-sm-none">
+        <nav className="navbar navbar-expand-md navbar-light d-block d-sm-none py-4">
           <div className="container-fluid">
-            <div className="row pt-4">
               <Link to="/" className="navbar-logo-font">
-              <img class="img-fluid" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
-                {/* <h1>Albuquerque Church</h1> */}
+              {/* <img class="img-fluid" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/> */}
+                <h1>Albuquerque Church</h1>
               </Link>
-            </div>
-            <div className="row mx-auto py-1">
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -31,7 +28,7 @@ const Layout = ({ isHomePage, children }) => {
                     <Link to="/what-we-believe" className="nav-link">What We Believe</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/coming-soon" className="nav-link">Teaching</Link>
+                    <Link to="/teaching" className="nav-link">Teaching</Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/coming-soon" className="nav-link">Community</Link>
@@ -40,7 +37,6 @@ const Layout = ({ isHomePage, children }) => {
                     <Link to="/coming-soon" className="nav-link">Give</Link>
                   </li>
                 </ul>
-              </div>
             </div>
           </div>
         </nav>
@@ -49,10 +45,10 @@ const Layout = ({ isHomePage, children }) => {
         <nav className="navbar navbar-expand-md navbar-light d-none d-sm-block p-4">
 
           <div className="d-flex justify-content-between">
-            <div className="col-6 col-md-5">
+            <div className="col-9 col-md-5">
               <Link to="/" className="navbar-logo-font">
-                <img class="img-fluid d-block d-md-none" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
-                <h1 className="d-none d-md-block">Albuquerque Church</h1>
+                {/* <img class="img-fluid d-block d-md-none" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/> */}
+                <h1>Albuquerque Church</h1>
               </Link>
             </div>
 
@@ -95,12 +91,17 @@ const Layout = ({ isHomePage, children }) => {
             <li className="nav-item"><Link to="/community" className="nav-link px-2">Community</Link></li>
             <li className="nav-item"><Link to="/give" className="nav-link px-2">Give</Link></li>
           </ul>
+          <br/>
+          <p><strong>Join Us Sundays at 10 AM</strong>
+            <br/>5528 Eubank Blvd. Suite 2,
+            <br/> Albuquerque, NM 87111</p>
+          <p>(505) 990-7000</p>
+          <a href="mailto:elders@albuquerque.church"><p>elders@albuquerque.church</p></a>
+          <br/>
           <Link to="/">
             <img className="img-fluid py-3 p-md-0" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/>
           </Link>
           <p>&copy; {new Date().getFullYear()}</p>
-          <p>(505) 990-7000</p>
-          <p>elders@albuquerque.church</p>
         </div>
       </footer>
 
@@ -124,7 +125,11 @@ const Layout = ({ isHomePage, children }) => {
               <p>&copy; {new Date().getFullYear()}</p>
             </div>
             <div className="col d-flex flex-column justify-content-center text-end">
-              <p>(505) 990-7000</p>
+            <br/>
+            <p><strong>Join Us Sundays at 10 AM</strong>
+              <br/>5528 Eubank Blvd. Suite 2,
+              <br/> Albuquerque, NM 87111
+              <br/>(505) 990-7000</p>
               <a href="mailto:elders@albuquerque.church"><p>elders@albuquerque.church</p></a>
             </div>
           </div>

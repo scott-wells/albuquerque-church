@@ -11,7 +11,7 @@ const Staff = ({ pastors }) => {
         <>
             <div className="about-staff-bar container-fluid"></div>
             <div className="about-staff container-fluid">
-                <h2 class="text-center mb-4 mb-md-5">Staff</h2>
+                <h2 class="text-center mb-4 mb-md-5">Elders</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4 px-4">
                         {pastors.map(pastor => {
                             return(

@@ -13,8 +13,8 @@ const JobPost = ({ children }) => {
         <>
             <div class="about-job-post row d-flex m-4 m-md-5">
                 <div class="col-md-7 align-self-center pb-5 pe-md-5">
-                    <h2>Looking for new leadership.</h2>
-                    <p>We are a new church plant looking for a new teaching pastor. Please apply if interested!</p>
+                    <h2>We are a New Church Plant Seeking a Lead Pastor</h2>
+                    <br/>
                     <a href={application} target="_blank" class="btn btn-dark btn-outline btn-sm" role="button">
                         Learn more &nbsp;
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
