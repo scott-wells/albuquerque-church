@@ -13,7 +13,6 @@ const Layout = ({ isHomePage, children }) => {
         <nav className="navbar navbar-expand-md navbar-light d-block d-sm-none py-4">
           <div className="container-fluid">
               <Link to="/" className="navbar-logo-font">
-              {/* <img class="img-fluid" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/> */}
                 <h1>Albuquerque Church</h1>
               </Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +30,7 @@ const Layout = ({ isHomePage, children }) => {
                     <Link to="/teaching" className="nav-link">Teaching</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/coming-soon" className="nav-link">Community</Link>
+                    <Link to="/community" className="nav-link">Community</Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/give" className="nav-link">Give</Link>
@@ -47,7 +46,6 @@ const Layout = ({ isHomePage, children }) => {
           <div className="d-flex justify-content-between">
             <div className="col-9 col-md-5">
               <Link to="/" className="navbar-logo-font">
-                {/* <img class="img-fluid d-block d-md-none" src={logo} alt="albuquerque church logo" title="Albuquerque Church"/> */}
                 <h1>Albuquerque Church</h1>
               </Link>
             </div>
@@ -67,7 +65,7 @@ const Layout = ({ isHomePage, children }) => {
                   <Link to="/teaching" className="nav-link">Teaching</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/coming-soon" className="nav-link">Community</Link>
+                  <Link to="/community" className="nav-link">Community</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/give" className="nav-link">Give</Link>

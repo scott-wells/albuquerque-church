@@ -26,21 +26,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-// export const pageQuery = graphql`
-//   query WordPressPostArchive($offset: Int!, $postsPerPage: Int!) {
-//     allWpPost(
-//       sort: { fields: [date], order: DESC }
-//       limit: $postsPerPage
-//       skip: $offset
-//     ) {
-//       nodes {
-//         excerpt
-//         uri
-//         date(formatString: "MMMM DD, YYYY")
-//         title
-//         excerpt
-//       }
-//     }
-//   }
-// `

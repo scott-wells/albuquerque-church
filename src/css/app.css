@@ -629,3 +629,31 @@ footer .nav-item a {
   .give-main-scripture { max-width: 70%; }
   .give-main-scripture blockquote { font-size: 2rem; }
 }
+
+
+/* ---------------------------
+    Community - Hero Section
+------------------------------ */
+.community-hero {
+  background: url("../images/woman-laughing_02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 400px;
+}
+.community-hero div h1 { font-size: 1.8rem; }
+.community-coffee {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.community-mountain-bike-bar {
+  height:1px;
+  background-color: var(--color-brown);
+}
+.community-mountain-bike {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
