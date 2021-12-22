@@ -575,3 +575,57 @@ footer .nav-item a {
 }
 
 
+/* ----------------------
+    Give - Hero Section
+------------------------- */
+.give-hero {
+  background: url("../images/hands-receiving-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 400px;
+}
+.give-hero div h1 { font-size: 1.8rem; }
+.give-main-bar {
+  height:1px;
+  background-color: var(--color-brown);
+}
+.give-main {
+  /* background-color: var(--color-offwhite); */
+  color: var(--color-text);
+  padding-top: 4rem;
+  /* padding-bottom: 4rem; */
+}
+@media (min-width: 992px) {
+  .give-main-text { max-width: 70%; }
+}
+.give-main-scripture {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+.give-main-scripture col { position: relative; }
+.give-main-scripture blockquote {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+.give-main-scripture blockquote small {
+  font-size: var(--fontSize-1);
+  font-weight: var(--fontWeight-medium);
+}
+
+@media (min-width: 576px) {
+  .give-main-scripture {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    max-width: 90%;
+  }
+  .give-main-scripture blockquote { font-size: 1.5rem; }
+}
+@media (min-width: 992px) {
+  .give-main-scripture { max-width: 70%; }
+  .give-main-scripture blockquote { font-size: 2rem; }
+}

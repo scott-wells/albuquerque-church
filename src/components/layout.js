@@ -34,7 +34,7 @@ const Layout = ({ isHomePage, children }) => {
                     <Link to="/coming-soon" className="nav-link">Community</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/coming-soon" className="nav-link">Give</Link>
+                    <Link to="/give" className="nav-link">Give</Link>
                   </li>
                 </ul>
             </div>
@@ -70,7 +70,7 @@ const Layout = ({ isHomePage, children }) => {
                   <Link to="/coming-soon" className="nav-link">Community</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/coming-soon" className="nav-link">Give</Link>
+                  <Link to="/give" className="nav-link">Give</Link>
                 </li>
               </ul>
             </div>
