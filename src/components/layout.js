@@ -82,7 +82,7 @@ const Layout = ({ isHomePage, children }) => {
       <footer className=" container-fluid text-center py-4 px-3 d-block d-md-none">
         <div className="col-10 mx-auto">
           <ul className="nav justify-content-center border-bottom pb-4 mb-4">
-            <li class="nav-item"><Link to="/" className="nav-link px-2">Home</Link></li>
+            <li className="nav-item"><Link to="/" className="nav-link px-2">Home</Link></li>
             <li className="nav-item"><Link to="/about" className="nav-link px-2">About</Link></li>
             <li className="nav-item"><Link to="/what-we-believe" className="nav-link px-2">What We Believe</Link></li>
             <li className="nav-item"><Link to="/teaching" className="nav-link px-2">Teaching</Link></li>
@@ -107,7 +107,7 @@ const Layout = ({ isHomePage, children }) => {
       <footer className=" container-fluid py-5 d-none d-md-block">
         <div className="col-10 mx-auto">
           <ul className="nav justify-content-center border-bottom pb-4 mb-4">
-            <li class="nav-item"><Link to="/" className="nav-link px-2">Home</Link></li>
+            <li className="nav-item"><Link to="/" className="nav-link px-2">Home</Link></li>
             <li className="nav-item"><Link to="/about" className="nav-link px-2">About</Link></li>
             <li className="nav-item"><Link to="/what-we-believe" className="nav-link px-2">What We Believe</Link></li>
             <li className="nav-item"><Link to="/teaching" className="nav-link px-2">Teaching</Link></li>

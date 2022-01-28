@@ -1,14 +1,12 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import parse from "html-react-parser"
 
 
 
-const Hero = ({ children }) => {
+const Hero = () => {
 
     return (
-      <div class="community-hero d-flex px-1 px-sm-5">
-        <div class="container align-self-center px-4">
+      <div className="community-hero d-flex px-1 px-sm-5">
+        <div className="container align-self-center px-4">
           <h1>
             Community
           </h1>

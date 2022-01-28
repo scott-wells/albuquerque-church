@@ -9,6 +9,8 @@ import blockContent from './blockContent'
 
 import teaching from './teaching'
 import pastor from './pastor'
+import coffeeEvent from './coffeeEvent'
+import moutainBikeEvent from './moutainBikeEvent'
 
 
 export default createSchema({
@@ -16,6 +18,8 @@ export default createSchema({
   types: schemaTypes.concat([
     teaching,
     pastor,
+    coffeeEvent,
+    moutainBikeEvent,
     blockContent,
   ]),
 })

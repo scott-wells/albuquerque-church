@@ -5,11 +5,12 @@ import CoffeeShopConnections from '../components/community/coffee-shop-connectio
 import MountainBikeFellowship from '../components/community/mountain-bike-fellowship'
 
 const Community = () => {
-    return(
+
+return(
     <Layout>
         <Hero />
-        <CoffeeShopConnections/>
-        <MountainBikeFellowship/>
+        <CoffeeShopConnections />
+        <MountainBikeFellowship  />
     </Layout>
     )
 }

@@ -1,17 +1,51 @@
-import React from "react"
+import React, { useEffect, useState } from 'react';
+import { graphql } from "gatsby"
 
-const CoffeeShopConnections = ({ children }) => {
+const CoffeeShopConnections = ({ data }) => {
+  const events = data.events.nodes;
 
     return (
-      <div class="community-coffee container-fluid">
-          <div class="community-coffee-text row row-cols-1 g-4 px-2 mx-auto">
-              <h2 class="text-center">Coffee Shop Connections</h2>
-              <div class="col text-center">
+      <div className="community-coffee container-fluid">
+          <div className="community-coffee-text row row-cols-1 g-4 px-2 mx-auto">
+              <h2 className="text-center">Coffee Shop Connections</h2>
+              <div className="col text-center">
                 <p>At Albuquerque Church we take our coffee seriously! We'd love to get together with you for a hot cuppa java and fellowship. For more information check out our announcement area in our church foyer.</p>
               </div>
+       
+              <br/>
+              <br/>
+
+              <h3>Upcoming Events:</h3>
+              {events &&
+                events.map((event,index) => {
+                  return(
+                    <div key={index} className='coffee-event-block'>
+                      <p>{event.title}</p>
+                      <p>{event.dateLocation}</p>
+                      <p>{event.description}</p>
+                    </div>
+                  )
+                })}
+
+                {!events &&
+                  <h1>Loading Coffee Shop Connections Events...</h1>
+                }
+
           </div>
       </div>
       )
   }
 
-  export default CoffeeShopConnections
+export default CoffeeShopConnections
+
+export const query = graphql`
+query allCoffeeEvents {
+  events: allSanityCoffeeEvents {
+      nodes {
+        dateLocation
+        description
+        title
+      }
+    }
+  }
+`
