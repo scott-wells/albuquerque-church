@@ -1,6 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import parse from "html-react-parser"
+import { Link } from "gatsby"
 // import MinistryThumbnail from "./ministry-thumbnail"
 
 

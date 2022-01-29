@@ -1,6 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import parse from "html-react-parser"
+import { Link } from "gatsby"
 
 
 
@@ -9,7 +8,7 @@ const Hero = ({ children }) => {
     return (
       <div class="home-hero px-1 px-sm-5">
         {/* including img tag for credit only */}
-        <img class="visually-hidden" title="Photo by Bill Tondreau" src="#" />
+        <img class="visually-hidden" title="Photo by Bill Tondreau" alt="" src="#" />
         <div class="container px-4">
           <h1 className="mb-3">
             A vision for our community.<br/>

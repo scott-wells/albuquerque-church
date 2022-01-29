@@ -1,6 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import parse from "html-react-parser"
+import { Link } from "gatsby"
 import logo from "../images/logo_02.jpeg"
 
 const Layout = ({ isHomePage, children }) => {

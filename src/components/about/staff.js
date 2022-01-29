@@ -1,6 +1,4 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import parse from "html-react-parser"
 import {GatsbyImage} from 'gatsby-plugin-image'
 
 
