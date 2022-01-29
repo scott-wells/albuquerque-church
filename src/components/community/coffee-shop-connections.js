@@ -31,20 +31,25 @@ useEffect(() => {
               <br/>
               <br/>
 
-              <h3>Upcoming Events:</h3>
+              <h3 style={{textDecoration: `underline`}}>Upcoming Events:</h3>
               {events &&
                 events.map((event,index) => {
                   return(
                     <div key={index} className='coffee-event-block'>
-                      <p>{event.title}</p>
+                      <b><p>{event.title}</p></b>
                       <p>{event.dateLocation}</p>
                       <p>{event.description}</p>
+                      <hr></hr>
                     </div>
                   )
                 })}
 
                 {!events &&
                   <h1>Loading Coffee Shop Connections Events...</h1>
+                }
+
+                {events < 1 &&
+                  <h1>Currently, No Events Scheduled</h1>
                 }
 
           </div>

@@ -27,7 +27,7 @@ const Ministries = ({ children }) => {
           <div class="col">
             <div class="card home-ministry-thumb home-ministry-3">
               {/* <Link to="/community/coffee-shop-connections" class="my-auto ps-3 ps-md-5"> */}
-              <Link to="/coming-soon" class="my-auto ps-3 ps-md-5">
+              <Link to="/community" class="my-auto ps-3 ps-md-5">
                 <h1>Coffee Shop <br/>Connections</h1>
               </Link>
             </div>
@@ -35,7 +35,7 @@ const Ministries = ({ children }) => {
           <div class="col">
             <div class="card home-ministry-thumb home-ministry-4">
               {/* <Link to="/community/mountain-bike-fellowship" class="my-auto ps-3 ps-md-5"> */}
-              <Link to="/coming-soon" class="my-auto ps-3 ps-md-5">
+              <Link to="/community" class="my-auto ps-3 ps-md-5">
                 <h1>Mountain Bike <br/>Fellowship</h1>
               </Link>
             </div>

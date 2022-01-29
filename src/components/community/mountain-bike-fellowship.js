@@ -1,6 +1,26 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
-const MountainBikeFellowship = ({ events }) => {
+const MountainBikeFellowship = () => {
+  const [events, setEvents] = useState(null);
+
+  const data = useStaticQuery(graphql`
+    query{
+      allSanityMountainBikeEvents {
+        nodes {
+          title
+          description
+          dateLocation
+        }
+      }
+    }
+  `)
+
+  console.log(data)
+
+  useEffect(() => {
+    setEvents(data.allSanityMountainBikeEvents.nodes)
+  }, [])
 
     return (
         <>
@@ -11,6 +31,24 @@ const MountainBikeFellowship = ({ events }) => {
                   <div className="col text-center">
                       <p>Men, come enjoy God's awesome creation along with fellowship and exercise at Michael Emery Trail, at the end of Spain off of High Desert Blvd. For more information on how you can join in, check out the announcement area in our church foyer. All skill levels welcome!</p>
                   </div>
+                  <h3>Upcoming Events:</h3>
+              {events && events.map((event,index) => {
+                  return(
+                    <div key={index} className='coffee-event-block'>
+                      <p>{event.title}</p>
+                      <p>{event.dateLocation}</p>
+                      <p>{event.description}</p>
+                    </div>
+                  )
+                })}
+
+                {!events &&
+                  <h1>Loading Mountain Bike Fellowships Events...</h1>
+                }
+
+                {events < 1 &&
+                  <h1>Currently, No Events Scheduled</h1>
+                }
               </div>
           </div>
       </>
@@ -18,20 +56,3 @@ const MountainBikeFellowship = ({ events }) => {
   }
 
   export default MountainBikeFellowship
-
-  export const query = graphql`
-  query allEvents {
-    events: allSanityMountainBikeEvents(
-      sort: {
-        fields: [_createdAt]
-        order: [DESC, ASC]
-      }
-    ) {
-      nodes {
-        dateLocation
-        description
-        title
-      }
-      }
-    }
-  `
