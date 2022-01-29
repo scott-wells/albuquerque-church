@@ -24,22 +24,24 @@ useEffect(() => {
       <div className="community-coffee container-fluid">
           <div className="community-coffee-text row row-cols-1 g-4 px-2 mx-auto">
               <h2 className="text-center">Coffee Shop Connections</h2>
-              <div className="col text-center">
+              <div className="text-center col col-sm-10 col-md-8 mx-auto mb-2">
                 <p>At Albuquerque Church we take our coffee seriously! We'd love to get together with you for a hot cuppa java and fellowship. For more information check out our announcement area in our church foyer.</p>
+                <br/>
+                <hr/>
+                <br/>
               </div>
 
-              <br/>
-              <br/>
+              
 
-              <h3 style={{textDecoration: `underline`}}>Upcoming Events:</h3>
+              <h3 className='text-center'>Upcoming Events:</h3>
               {events &&
                 events.map((event,index) => {
                   return(
-                    <div key={index} className='coffee-event-block'>
-                      <b><p>{event.title}</p></b>
+                    <div key={index} className='event-block col col-sm-10 col-md-8 mx-auto p-4 mb-5'>
+                      <h4 className='event-block-title'>{event.title}</h4>
+                      <br/>
                       <p>{event.dateLocation}</p>
                       <p>{event.description}</p>
-                      <hr></hr>
                     </div>
                   )
                 })}

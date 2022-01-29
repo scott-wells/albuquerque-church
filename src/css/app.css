@@ -650,10 +650,19 @@ footer .nav-item a {
   padding-bottom: 4rem;
 }
 .community-mountain-bike-bar {
-  height:1px;
-  background-color: var(--color-brown);
+  height:10px;
+  background-color: var(--color-yellow);
 }
 .community-mountain-bike {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+/* event block */
+.event-block {
+  background-color: white;
+  border-radius: 1rem;
+}
+.event-block-title {
+  font-size: var(--fontSize-1);
+  color: var(--color-heading);
 }
