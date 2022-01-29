@@ -1,8 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
-const CoffeeShopConnections = ({ data }) => {
-  const events = data.events.nodes;
+const CoffeeShopConnections = () => {
+  const [events, setEvents] = useState(null);
+
+const data = useStaticQuery(graphql`
+  query event {
+    allSanityCoffeeEvents {
+      nodes {
+        title
+        description
+        dateLocation
+      }
+    }
+  }
+`)
+
+useEffect(() => {
+  setEvents(data.allSanityCoffeeEvents.nodes)
+}, [])
 
     return (
       <div className="community-coffee container-fluid">
@@ -11,7 +27,7 @@ const CoffeeShopConnections = ({ data }) => {
               <div className="col text-center">
                 <p>At Albuquerque Church we take our coffee seriously! We'd love to get together with you for a hot cuppa java and fellowship. For more information check out our announcement area in our church foyer.</p>
               </div>
-       
+
               <br/>
               <br/>
 
@@ -38,14 +54,3 @@ const CoffeeShopConnections = ({ data }) => {
 
 export default CoffeeShopConnections
 
-export const query = graphql`
-query allCoffeeEvents {
-  events: allSanityCoffeeEvents {
-      nodes {
-        dateLocation
-        description
-        title
-      }
-    }
-  }
-`
