@@ -9,8 +9,10 @@ const data = useStaticQuery(graphql`
     allSanityCoffeeEvents {
       nodes {
         title
+        releaseDate
+        time
+        location
         description
-        dateLocation
       }
     }
   }
@@ -31,16 +33,18 @@ useEffect(() => {
                 <br/>
               </div>
 
-              
-
               <h3 className='text-center'>Upcoming Events:</h3>
               {events &&
                 events.map((event,index) => {
+                  let formattedDate = event.releaseDate.split('-');
                   return(
                     <div key={index} className='event-block col col-sm-10 col-md-8 mx-auto p-4 mb-5'>
-                      <h4 className='event-block-title'>{event.title}</h4>
+                      <h4 className='event-block-title'>{event.title} - {`${formattedDate[1]}-${formattedDate[2]}-${formattedDate[0]}`}</h4>
                       <br/>
-                      <p>{event.dateLocation}</p>
+                      <div style={{display: `inline-flex`}}>
+                        <p>{event.time} - </p>
+                        <p>{event.location}</p>
+                      </div>
                       <p>{event.description}</p>
                     </div>
                   )

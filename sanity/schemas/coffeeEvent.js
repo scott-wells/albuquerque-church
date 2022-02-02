@@ -9,8 +9,22 @@ export default {
         type: 'string',
       },
       {
-        name: 'dateLocation',
-        title: 'Event Date & Location',
+        title: 'Date',
+        name: 'releaseDate',
+        type: 'date',
+        options: {
+          dateFormat: 'MM-DD-YYYY',
+          calendarTodayLabel: 'Today'
+        }
+      },
+      {
+        name: 'time',
+        title: 'Event Time',
+        type: 'string',
+      },
+      {
+        name: 'location',
+        title: 'Event Location',
         type: 'string',
       },
       {
