@@ -9,7 +9,7 @@ import application from "../../docs/abq-church-lead-pastor-application.pdf"
 const JobPost = ({ children }) => {
     return (
         <>
-            <div class="about-job-post row d-flex m-4 m-md-5">
+            <div class="about-job-post row d-flex mx-auto my-4 my-md-5 px-5">
                 <div class="col-md-7 align-self-center pb-5 pe-md-5">
                     <h2>We are a New Church Plant Seeking a Lead Pastor</h2>
                     <br/>

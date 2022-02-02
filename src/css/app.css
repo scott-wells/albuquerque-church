@@ -428,7 +428,10 @@ footer .nav-item a {
   padding-bottom: 6rem;
   min-height: 400px;
 }
-.about-hero div h1 { font-size: 1.8rem; }
+.about-hero div h1 { 
+  font-size: 2rem; 
+  word-spacing: 0.2rem;
+}
 
 /* --------------------------
     About - JobPost Section
@@ -437,13 +440,22 @@ footer .nav-item a {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+.about-job-post h2 {
+  word-spacing: 0.2rem;
+  font-size: 1.5rem;
+}
 .about-job-post .card { padding: 0; }
-
+@media (min-width: 992px) {
+  .about-job-post { max-width: 992px; }
+  .about-job-post h2 {
+    font-size: 2rem;
+  }
+}
 
 /* ------------------------
     About - WhoWeAre Section
 --------------------------- */
-.about-whoweare {
+.about-whoweare-bg {
   background: url("../images/bible-folded-hands_02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -458,6 +470,9 @@ footer .nav-item a {
 }
 .about-whoweare h3,
 .about-whoweare p { color: var(--color-text); }
+@media (min-width: 992px) {
+  .about-whoweare { max-width: 992px; }
+}
 
 
 /* -----------------------------
@@ -475,10 +490,7 @@ footer .nav-item a {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-  .about-our-history-text { max-width: 90%; }
-}
-@media (min-width: 992px) {
-  .about-our-history-text { max-width: 60%; }
+  .about-our-history-text { max-width: 576px; }
 }
 
 
@@ -504,6 +516,9 @@ footer .nav-item a {
   width: auto;
   height: 100%;
   object-fit: contain;
+}
+@media (min-width: 992px) {
+  .about-staff { max-width: 992px; }
 }
 
 
@@ -596,7 +611,7 @@ footer .nav-item a {
   padding-bottom: 6rem;
   min-height: 400px;
 }
-.give-hero div h1 { font-size: 1.8rem; }
+.give-hero div h1 { font-size: 2.5rem; }
 .give-main-bar {
   height:1px;
   background-color: var(--color-brown);
@@ -607,9 +622,7 @@ footer .nav-item a {
   padding-top: 4rem;
   /* padding-bottom: 4rem; */
 }
-@media (min-width: 992px) {
-  .give-main-text { max-width: 70%; }
-}
+
 .give-main-scripture {
   padding-top: 5rem;
   padding-bottom: 4rem;
@@ -626,6 +639,7 @@ footer .nav-item a {
 }
 
 @media (min-width: 576px) {
+  .give-main-text { max-width: 576px; }
   .give-main-scripture {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -634,10 +648,10 @@ footer .nav-item a {
   .give-main-scripture blockquote { font-size: 1.5rem; }
 }
 @media (min-width: 992px) {
+  .give-hero div h1 { font-size: 3rem; }
   .give-main-scripture { max-width: 70%; }
   .give-main-scripture blockquote { font-size: 2rem; }
 }
-
 
 /* ---------------------------
     Community - Hero Section
