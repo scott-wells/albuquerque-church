@@ -19,7 +19,7 @@ const OtherEvents = () => {
   `)
 
   useEffect(() => {
-    setEvents(data.allSanityMountainBikeEvents.nodes)
+    setEvents(data.allSanityOtherEvents.nodes)
   }, [])
 
     return (
