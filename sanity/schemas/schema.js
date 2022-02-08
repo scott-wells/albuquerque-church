@@ -11,6 +11,7 @@ import teaching from './teaching'
 import pastor from './pastor'
 import coffeeEvent from './coffeeEvent'
 import moutainBikeEvent from './moutainBikeEvent'
+import otherEvents from './otherEvents'
 
 
 export default createSchema({
@@ -20,6 +21,7 @@ export default createSchema({
     pastor,
     coffeeEvent,
     moutainBikeEvent,
+    otherEvents,
     blockContent,
   ]),
 })
