@@ -15,7 +15,7 @@ const About = ({ data }) => {
     return(
         <Layout>
             <Hero/>
-            <JobPost/>
+            {/* <JobPost/> */}
             <WhoWeAre/>
             <OurHistory/>
             <Staff pastors={pastors} />
